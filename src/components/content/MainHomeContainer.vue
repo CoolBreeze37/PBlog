@@ -4,7 +4,6 @@
     <div class="col">
       <container />
     </div>
-
   </div>
 </template>
 
@@ -18,7 +17,4 @@ export default {
 </script>
 
 <style scoped>
-#MainHomeContainer {
-  background-color: rgba(238, 231, 231, 0.397);
-}
 </style>

@@ -3,9 +3,8 @@
   <tab-bar @showEvent="showAside">
     <!-- 顶部导航栏左 brand-->
     <tab-bar-item slot="left">
-      <img class="align-self-center"
-           src="~assets/img/1.jpg"
-           alt="" />
+      <svg-icon icon-class="logo"
+                style="width: 130px;height: 34.43px;max-height: 100%;margin-top: 6px;margin-left:20px"></svg-icon>
     </tab-bar-item>
     <!-- 顶部导航栏左中 搜索框-->
     <tab-bar-item slot="centerleft">
@@ -21,20 +20,22 @@
     </tab-bar-item>
     <!-- 顶部导航栏右 菜单-->
     <tab-bar-item slot="right">
-      <li class="nav-item">
+      <li class="nav-item"
+          style="width:49px">
         <router-link to="/home"
-                     class="nav-link">主页</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/home"
-                     class="nav-link">主页</router-link>
+                     class="nav-link">
+          <svg-icon icon-class="feather">
+          </svg-icon>
+        </router-link>
       </li>
       <!-- 下拉菜单 -->
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown"
+          style="width:49px">
         <a class="nav-link dropdown-toggle"
            role="button"
            data-toggle="dropdown">
-          主页
+          <svg-icon icon-class="yaoshi">
+          </svg-icon>
         </a>
         <!-- 下拉菜单右照齐 -->
         <div class="dropdown-menu dropdown-menu-right">
@@ -56,6 +57,7 @@ import TabBar from "components/common/tabbar/TableBar";
 import TabBarItem from "components/common/tabbar/TableBarItem";
 import SearchBar from "components/common/searchbar/SearchBar";
 import Player from "components/common/player/Player";
+import SvgIcon from '../common/SvgIcon.vue';
 
 export default {
   components: {

@@ -6,7 +6,8 @@
       屏幕小于576pxbrand将被左折叠菜单折叠
   -->
   <div id="tab-bar"
-       class="row navbar navbar-expand-lg navbar-light bg-light sticky-top">
+       class="row navbar navbar-expand-lg navbar-light bg-light sticky-top "
+       style="background-color: #f9f9f9!important;">
     <!-- 左折叠菜单-->
     <div class="navbar-expand-sm"
          @click="showClick(!isShow)">
@@ -67,25 +68,31 @@
     <!-- sm-11 -->
     <!-- md-10 -->
     <div class="col-12 col-sm-11 col-md-10 my-auto">
-      <div class="row collapse navbar-collapse justify-content-end"
+      <div class="row collapse navbar-collapse"
            id="navbarSupportedContent">
         <!-- 屏幕大于992px每部分占四份 垂直居中 插槽水平居中（右插槽右对齐）-->
         <!-- 屏幕小于992px元素叠在一起 -->
-        <div class="col-lg-4 align-self-center">
+        <div class="col-lg-5 align-self-center justify-content-md-between">
           <div class="row justify-content-center">
             <slot name="centerleft"></slot>
           </div>
         </div>
-        <div class="col-lg-4 align-self-center">
-          <div class="row justify-content-center">
-            <slot name="centerright"></slot>
+        <div class="offset-lg-2 col-lg-5">
+          <div class="row justify-content-end">
+            <div class="col-lg-8">
+              <div class="justify-content-center">
+                <slot name="centerright"></slot>
+              </div>
+            </div>
+            <div class="col-lg-4 align-self-center self">
+              <div class="justify-content-lg-end">
+                <slot name="right"></slot>
+              </div>
+            </div>
           </div>
+
         </div>
-        <div class="col-lg-4 align-self-center">
-          <div class="row justify-content-lg-end">
-            <slot name="right"></slot>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -118,8 +125,7 @@ export default {
   height: 7vh;
   margin: 0 0 0 0;
   padding: 0;
-
-  border-radius: 3px;
+  box-shadow: 1px 1px 5px #e5e5e5;
 }
 /* .navbar{
   padding: 0;

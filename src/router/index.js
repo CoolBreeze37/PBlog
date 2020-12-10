@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 const home = () => import('views/Home')
 const Repository = () => import('views/Repository')
+const reader = () => import('components/common/reader/Reader')
 
 Vue.use(VueRouter)
 
@@ -12,11 +13,15 @@ const routes = [{
   },
   {
     path: '/home',
-    component: home
+    component: home,
   },
   {
     path: '/repository',
     component: Repository
+  },
+  {
+    path: '/reader',
+    component: reader
   }
 ]
 

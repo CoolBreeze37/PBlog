@@ -5,12 +5,8 @@
       <div class="card-body text-center"
            style="height:200px;max-height:200px;">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text mb-3"
-           style="height:75px;overflow:hidden;
-text-overflow:ellipsis;
-display:-webkit-box;
--webkit-line-clamp:3;
--webkit-box-orient:vertical;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text mb-3 ellipse"
+           style="height:75px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <a href="#"
            class="btn btn-secondary py-1"
            style="opacity:0.7;border-radius:25px;"><span><small><svg width="2em"

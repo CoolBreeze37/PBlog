@@ -1,5 +1,5 @@
 <template>
-  <div class="card mb-3">
+  <div class="card m-3">
     <div class="img"
          style="height:25vh;overflow:hidden;">
       <img src="~assets/img/5.jpg"
@@ -20,13 +20,7 @@
       <div id="description"
            class="d-flex flex-column"
            style="height:100px">
-        <p class="card-text"
-           style="
-           overflow:hidden;
-           text-overflow:ellipsis;
-           display:-webkit-box;
-           -webkit-line-clamp:2;
-           -webkit-box-orient:vertical;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text ellipsis">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
       <div id="status">
@@ -51,7 +45,6 @@ export default {
 .card:hover {
   transition: 0.2s;
   box-shadow: 0 0 15px skyblue;
-  transform: scale(1.01);
 }
 .card:hover .img > img {
   transition: 0.5s;

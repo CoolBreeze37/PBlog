@@ -1,6 +1,6 @@
 <template>
   <div class="player row">
-    <div class="player-picture my-auto col-1 pl-0">
+    <div class="player-picture my-auto offset-1 col-1 pl-0">
       <img class="rounded-circle"
            src="~assets/img/7.jpg"
            alt="" />
@@ -10,7 +10,7 @@
            class="player-source"
            src="~assets/mp3/孝淑 - 高梨康治 - 五月雨 (孝淑 Bootleg).mp3"></audio>
 
-    <div class="player-control col-9 ml-2">
+    <div class="player-control col-8">
       <span id="musictitle"
             class="text-center block"
             style="width:117px"><small class="block">我想爱个世界</small></span>
@@ -51,7 +51,7 @@
         </span>
       </div>
       <div class="progress w-auto"
-           style="height: 2px;">
+           style="height: 4px; border-radius:0;">
         <div class="progress-bar"
              role="progressbar"
              :style="{ width: progress + '%' }"
@@ -60,22 +60,14 @@
              aria-valuemax="100"></div>
         <div class="progress-bar bg-primary"
              role="progressbar"
-             style="width: 50%;opacity:0.3"
+             style="width: 50%;opacity:0.3;"
              aria-valuenow="-50"
              aria-valuemin="0"
              aria-valuemax="100"></div>
       </div>
     </div>
-    <span class="col-1 px-0 align-self-center btn btn-link ml-1">
-      <svg width="1em"
-           height="1em"
-           viewBox="0 0 16 16"
-           class="bi bi-text-center"
-           fill="currentColor"
-           xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-              d="M4 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-      </svg>
+    <span class="col-1 px-0 align-self-center btn btn-link ml-3">
+      <svg-icon icon-class="circle"></svg-icon>
     </span>
   </div>
 </template>
@@ -125,7 +117,7 @@ export default {
 
 <style scoped>
 .player-picture img {
-  width: 35px;
+  width: 32px;
 }
 .btn {
   cursor: var(--cursorUrlP), pointer !important;

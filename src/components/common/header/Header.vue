@@ -1,5 +1,5 @@
 <template>
-  <header style="height:14vh">
+  <header style="height:14vh;">
     <h2 class="mt-2">
       <span class="d-inline mb-2">
         <slot>

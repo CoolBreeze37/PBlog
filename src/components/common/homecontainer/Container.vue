@@ -1,7 +1,8 @@
 <template>
-  <div class="col">
-    <div class="row py-2">
-      <div class="col p-0">
+  <div class="col px-0">
+    <div class="row pt-0">
+      <div class="col"
+           style="background-color:#f9f9f9;">
         <Header :title="title"
                 :msg="msg">
 
@@ -10,19 +11,12 @@
     </div>
     <div class="dropdown-divider"></div>
     <div class="row">
-      <div class="col p-0">
+      <router-link to="reader"
+                   tag="div"
+                   class="col p-1 pointer">
         <ContentItem />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-0">
-        <ContentItem />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-0">
-        <ContentItem />
-      </div>
+
+      </router-link>
     </div>
   </div>
 </template>
@@ -44,4 +38,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.pointer:hover {
+  cursor: pointer;
+}
+</style>

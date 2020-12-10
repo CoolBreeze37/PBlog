@@ -11,6 +11,7 @@
     "bootstrap-vue": "^2.18.1",
     "core-js": "^3.8.0",
     "jquery": "^3.5.1",
+    "mavon-editor": "^2.9.0",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
+    "svg-sprite-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

@@ -1,6 +1,10 @@
 <template>
-  <div style="height:93vh">
-    <container />
+  <div id="MainRepositoryContainer"
+       class="row com-container">
+    <div class="col">
+      <container />
+    </div>
+
   </div>
 </template>
 
