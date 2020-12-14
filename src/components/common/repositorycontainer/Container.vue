@@ -1,6 +1,6 @@
 <template>
   <div class="col px-0">
-    <div class="row pt-0">
+    <div class="row">
       <div class="col"
            style="background-color:#f9f9f9;">
         <Header :title="title"
@@ -9,7 +9,6 @@
         </Header>
       </div>
     </div>
-    <div class="dropdown-divider"></div>
     <div class="row">
       <div class="col p-3">
         <div class="card">
@@ -49,7 +48,8 @@ export default {
   components: {
     ContentItem,
     Header
-  }
+  },
+
 
 }
 </script>

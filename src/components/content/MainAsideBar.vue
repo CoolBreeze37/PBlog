@@ -1,27 +1,24 @@
 <template>
   <div id="MainAsideBar"
        class="d-flex flex-column"
-       style="height:92.5vh;background-color:#f9f9f9;position:sticky;top:7vh">
-    <div class="scrool">
-      <div>
-        <Wrapper />
-      </div>
-      <div>
-        <Navgaitor />
-      </div>
+       style="height:93vh;background-color:#f9f9f9;position:sticky;top:7vh">
+    <!-- scroll over-flow:auto-->
+    <div class="scroll">
+      <Wrapper />
+      <Navgaitor />
     </div>
-
-    <footer style="height:7vh;"
-            class="align-content-center mt-auto sticky-bottom">
+    <!-- 左侧底部 -->
+    <footer style="height:7vh;display:flex"
+            class="mt-auto">
       <LeftFooter />
     </footer>
   </div>
 </template>
 
 <script>
-import Wrapper from "components/common/asidebar/Wrapper";
-import Navgaitor from "components/common/asidebar/Navgaitor/Navgaitor";
-import LeftFooter from "components/common/asidebar/LeftFooter";
+import Wrapper from "components/common/asidebar/wrapper/Wrapper";
+import Navgaitor from "components/common/asidebar/navgaitor/Navgaitor";
+import LeftFooter from "components/common/asidebar/leftfooter/LeftFooter";
 export default {
   components: {
     Wrapper,

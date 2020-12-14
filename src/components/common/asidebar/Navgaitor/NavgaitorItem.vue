@@ -1,25 +1,43 @@
 <template>
   <div>
     <header class="list-group-item border-0 pl-1 "
-            style="background-color:#f9f9f9">
-      <small>{{group.header}}</small>
+            :style="{'background-color':curstomerStyle.HbackgroundColor}">
+      <small :style="{color:curstomerStyle.Hcolor}">{{group.header}}</small>
     </header>
-    <router-link :to="item.route"
-                 v-for="item in group.items"
-                 class="a list-group-item list-group-item-action border-0 py-2">
+    <router-link v-for="(item,index) in group.items"
+                 :to="item.route"
+                 style="{background-color:}"
+                 :style="activeStyle"
+                 class="list-group-item list-group-item-action border-0 py-2">
       <span class="mr-4">
         <svg-icon :icon-class="item.icon"></svg-icon>
       </span>
-      <span class="text-muted">{{item.name}}</span>
+      <span :style="{color:curstomerStyle.color}">{{item.name}}</span>
     </router-link>
   </div>
 </template>
 
 <script>
+import { NavStyle } from '../index'
 export default {
   props: {
     group: {
       type: Object
+    },
+    // 期望样式
+    curstomerStyle: {
+      type: NavStyle,
+      default: () => {
+        return new NavStyle()
+      }
+    }
+  },
+  computed: {
+    activeStyle () {
+      return {
+        '--background-color': this.curstomerStyle.backgroundColor,
+        '--background-color-hover': this.curstomerStyle.active
+      }
     }
   }
 }
@@ -27,9 +45,9 @@ export default {
 
 <style scoped>
 .list-group-item {
-  background-color: #f9f9f9;
+  background: var(--background-color);
 }
 .list-group-item:hover {
-  background: #e4e4e4;
+  background: var(--background-color-hover);
 }
 </style>

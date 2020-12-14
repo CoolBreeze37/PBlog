@@ -1,5 +1,6 @@
 <template>
-  <div class="blogInfo text-muted">
+  <div class="blogInfo text-muted"
+       v-if="isShow">
     <header class="p-2"><small><strong>博客信息</strong></small></header>
     <ul class="box mx-2">
       <li class="item">
@@ -30,7 +31,17 @@
 <script>
 import SvgIcon from '../SvgIcon.vue'
 export default {
+  data () {
+    return {
+      isShow: false
+    }
+  },
   components: { SvgIcon },
+  watch: {
+    $route (to, from) {
+      this.isShow = !(to.path.indexOf("reader") >= 0)
+    }
+  }
 
 }
 </script>

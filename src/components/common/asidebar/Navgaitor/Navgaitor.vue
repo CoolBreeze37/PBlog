@@ -1,16 +1,20 @@
 <template>
   <ul id="Navgaitor"
       class="list-group border-0">
-    <NavgaitorGroup :group="groups[0]">
+    <NavgaitorGroup :group="groups[0]"
+                    :curstomerStyle="curstomerStyle[0]">
     </NavgaitorGroup>
-    <NavgaitorGroup :group="groups[1]">
+    <NavgaitorGroup :group="groups[1]"
+                    :curstomerStyle="curstomerStyle[1]">
     </NavgaitorGroup>
   </ul>
 </template>
 
 <script>
+import { NavStyle } from '../index';
 import Header from '../../header/Header.vue';
 import NavgaitorGroup from './NavgaitorGroup.vue'
+
 export default {
   components: {
     Header,
@@ -18,8 +22,10 @@ export default {
   },
   data () {
     return {
+      curstomerStyle: [new NavStyle(), new NavStyle()],
       groups: [
         {
+
           header: '导航',
           items: [{
             route: '/home',

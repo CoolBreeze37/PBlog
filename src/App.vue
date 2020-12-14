@@ -1,6 +1,6 @@
 <template>
   <div id="app"
-       class="container-lg position-relative p-0">
+       class="container-lg position-relative p-0" v-cloak>
 
     <!-- 导航栏 -->
     <main-tab-bar @showEvent="showAside"></main-tab-bar>
@@ -27,6 +27,7 @@
         <main-right-bar></main-right-bar>
       </div>
     </div>
+    <back-top />
   </div>
 </template>
 
@@ -34,6 +35,7 @@
 import MainTabBar from "components/content/MainTableBar";
 import MainAsideBar from "components/content/MainAsideBar";
 import MainRightBar from "components/content/MainRightBar"
+import BackTop from 'components/common/backtop/BackTop.vue';
 export default {
   name: "App",
   data () {
@@ -44,7 +46,8 @@ export default {
   components: {
     MainTabBar,
     MainAsideBar,
-    MainRightBar
+    MainRightBar,
+    BackTop
   },
   methods: {
     showAside (args) {
@@ -94,6 +97,9 @@ body {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #ededed;
     border-radius: 10px;
+  }
+  [v-cloak]{
+    display: none;
   }
 }
 </style>
