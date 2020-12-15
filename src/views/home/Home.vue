@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import MainHomeContainer from 'components/content/MainHomeContainer'
+import MainHomeContainer from './childComponents/HomeContainer'
 export default {
   components: {
     MainHomeContainer

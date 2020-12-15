@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import MainRepositoryContainer from 'components/content/MainRepositoryContainer'
+import MainRepositoryContainer from './childComponents/RepositoryContainer'
 export default {
   components: {
     MainRepositoryContainer

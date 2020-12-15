@@ -3,14 +3,13 @@
 </template>
 
 <script>
-import MainFriendsContainer from 'components/content/MainFriendsContainer'
+import MainFriendsContainer from './childComponents/FriendsContainer'
 export default {
- components:{
-  MainFriendsContainer
- }
+  components: {
+    MainFriendsContainer
+  }
 }
 </script>
 
 <style>
-
 </style>

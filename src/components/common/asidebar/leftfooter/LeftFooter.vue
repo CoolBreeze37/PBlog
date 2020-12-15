@@ -13,8 +13,10 @@
       <div>
         <svg-icon :icon-class="item.iconClass">
         </svg-icon>
+        <br>
+        <small>{{item.name}}</small>
       </div>
-      <small>{{item.name}}</small>
+
     </router-link>
   </div>
 </template>
@@ -62,14 +64,21 @@ export default {
 .leftfooter {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 .leftfooter a {
   text-decoration: none;
 }
 .item {
   flex: 1;
+  display: flex;
+  height: 100%;
   text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+.item div {
+  flex: 1;
+  align-self: center;
 }
 </style>

@@ -12,12 +12,10 @@
 
 <script>
 import { NavStyle } from '../index';
-import Header from '../../header/Header.vue';
 import NavgaitorGroup from './NavgaitorGroup.vue'
 
 export default {
   components: {
-    Header,
     NavgaitorGroup
   },
   data () {

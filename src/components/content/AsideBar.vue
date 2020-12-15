@@ -1,15 +1,13 @@
 <template>
-  <div id="MainAsideBar"
-       class="d-flex flex-column"
-       style="height:93vh;background-color:#f9f9f9;position:sticky;top:7vh">
+  <div id="aside-bar"
+       class="d-flex flex-column">
     <!-- scroll over-flow:auto-->
     <div class="scroll">
       <Wrapper />
       <Navgaitor />
     </div>
     <!-- 左侧底部 -->
-    <footer style="height:7vh;display:flex"
-            class="mt-auto">
+    <footer class="footer">
       <LeftFooter />
     </footer>
   </div>
@@ -29,4 +27,15 @@ export default {
 </script>
 
 <style scoped>
+#aside-bar {
+  height: 93vh;
+  top: 7vh;
+  background-color: #f9f9f9;
+  position: sticky;
+}
+.footer {
+  height: 7vh;
+  display: flex;
+  margin-top: auto;
+}
 </style>

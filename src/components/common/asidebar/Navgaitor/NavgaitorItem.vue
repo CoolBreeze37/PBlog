@@ -6,13 +6,12 @@
     </header>
     <router-link v-for="(item,index) in group.items"
                  :to="item.route"
-                 style="{background-color:}"
                  :style="activeStyle"
-                 class="list-group-item list-group-item-action border-0 py-2">
+                 class="list-group-item border-0 py-2">
       <span class="mr-4">
         <svg-icon :icon-class="item.icon"></svg-icon>
       </span>
-      <span :style="{color:curstomerStyle.color}">{{item.name}}</span>
+      <span>{{item.name}}</span>
     </router-link>
   </div>
 </template>
@@ -36,7 +35,8 @@ export default {
     activeStyle () {
       return {
         '--background-color': this.curstomerStyle.backgroundColor,
-        '--background-color-hover': this.curstomerStyle.active
+        '--background-color-hover': this.curstomerStyle.active,
+        '--color': this.curstomerStyle.color,
       }
     }
   }
@@ -46,6 +46,8 @@ export default {
 <style scoped>
 .list-group-item {
   background: var(--background-color);
+  text-decoration: none;
+  color: var(--color);
 }
 .list-group-item:hover {
   background: var(--background-color-hover);

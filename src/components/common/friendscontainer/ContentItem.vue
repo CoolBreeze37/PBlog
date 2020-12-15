@@ -8,7 +8,7 @@
            alt="">
       <div class="box">
         <h5>{{name}}</h5>
-        <div class="wrap">你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋</div>
+        <div class="ellipsis">你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋你是王八蛋</div>
       </div>
     </div>
 
@@ -42,12 +42,6 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-}
-.wrap {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 75%;
 }
 .box {
   flex: 1;

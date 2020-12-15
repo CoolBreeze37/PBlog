@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col"
            style="background-color:#f9f9f9;">
-        <Header :title="title"
+        <Banner :title="title"
                 :msg="msg">
           <svg-icon icon-class="github2"></svg-icon>
-        </Header>
+        </Banner>
       </div>
     </div>
     <div class="row">
@@ -37,7 +37,7 @@
 
 <script>
 import ContentItem from 'components/common/repositorycontainer/ContentItem'
-import Header from 'components/common/header/Header'
+import Banner from 'components/common/banner/Banner'
 export default {
   data () {
     return {
@@ -47,10 +47,8 @@ export default {
   },
   components: {
     ContentItem,
-    Header
+    Banner
   },
-
-
 }
 </script>
 

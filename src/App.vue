@@ -1,6 +1,7 @@
 <template>
   <div id="app"
-       class="container-lg position-relative p-0" v-cloak>
+       class="container-lg position-relative p-0"
+       v-cloak>
 
     <!-- 导航栏 -->
     <main-tab-bar @showEvent="showAside"></main-tab-bar>
@@ -10,7 +11,7 @@
 
       <!-- 左边栏 -->
       <div class="col-sm-4 col-md-4 col-lg-2 p-0 mycontainer-size-7">
-        <main-aside-bar />
+        <AsideBar />
       </div>
 
       <!-- 内容 -->
@@ -24,7 +25,7 @@
       <!-- 右边栏 -->
       <div class="col-lg-2 px-0 rightBar"
            style="background-color: #f9f9f9;">
-        <main-right-bar></main-right-bar>
+        <RightBar />
       </div>
     </div>
     <back-top />
@@ -33,8 +34,8 @@
 
 <script>
 import MainTabBar from "components/content/MainTableBar";
-import MainAsideBar from "components/content/MainAsideBar";
-import MainRightBar from "components/content/MainRightBar"
+import AsideBar from "components/content/AsideBar";
+import RightBar from "components/content/RightBar"
 import BackTop from 'components/common/backtop/BackTop.vue';
 export default {
   name: "App",
@@ -45,8 +46,8 @@ export default {
   },
   components: {
     MainTabBar,
-    MainAsideBar,
-    MainRightBar,
+    AsideBar,
+    RightBar,
     BackTop
   },
   methods: {
@@ -98,7 +99,7 @@ body {
     background: #ededed;
     border-radius: 10px;
   }
-  [v-cloak]{
+  [v-cloak] {
     display: none;
   }
 }

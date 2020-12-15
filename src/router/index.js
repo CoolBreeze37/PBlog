@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const home = () => import('views/Home')
-const Repository = () => import('views/Repository')
+const home = () => import('views/home/Home')
+const Repository = () => import('views/repository/Repository')
 const reader = () => import('components/common/reader/Reader')
-const friends = () => import('views/Friends')
+const friends = () => import('views/friends/Friends')
 
 Vue.use(VueRouter)
 

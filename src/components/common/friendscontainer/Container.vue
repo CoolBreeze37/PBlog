@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col"
            style="background-color:#f9f9f9">
-        <Header :title="'友情连接'"
+        <Banner :title="'友情连接'"
                 :msg="'我的小伙伴们~'">
           <svg-icon icon-class="link"></svg-icon>
-        </Header>
+        </Banner>
       </div>
     </div>
     <div class="box">
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Header from 'components/common/header/Header'
+import Banner from 'components/common/banner/Banner'
 import ContentItem from 'components/common/friendscontainer/ContentItem'
 export default {
   data () {
@@ -48,7 +48,7 @@ export default {
     }
   },
   components: {
-    Header,
+    Banner,
     ContentItem
   },
 

@@ -1,14 +1,15 @@
 <template>
-  <div id="MainHomeContainer"
-       class="row">
+  <div id="RepositoryContainer"
+       class="row com-container">
     <div class="col">
       <container />
     </div>
+
   </div>
 </template>
 
 <script>
-import Container from 'components/common/homecontainer/Container'
+import Container from 'components/common/repositorycontainer/Container'
 export default {
   components: {
     Container
@@ -16,5 +17,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 </style>

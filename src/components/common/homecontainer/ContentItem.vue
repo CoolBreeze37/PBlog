@@ -20,7 +20,7 @@
       <div id="description"
            class="d-flex flex-column"
            style="height:100px">
-        <p class="card-text ellipsis">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text ellipsis-mul">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
       <div id="status">

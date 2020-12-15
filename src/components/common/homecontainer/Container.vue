@@ -1,15 +1,13 @@
 <template>
-  <div class="col px-0">
-    <div class="row">
-      <div class="col"
-           style="background-color:#f9f9f9;">
-        <Header :title="title"
+  <div class="p-0">
+    <div class="header row">
+      <div class="col">
+        <Banner :title="title"
                 :msg="msg">
-
-        </Header>
+        </Banner>
       </div>
     </div>
-    <div class="row">
+    <div class="content row">
       <router-link to="reader"
                    tag="div"
                    class="col p-1 pointer">
@@ -21,7 +19,7 @@
 </template>
 
 <script>
-import Header from 'components/common/header/Header'
+import Banner from 'components/common/banner/Banner'
 import ContentItem from 'components/common/homecontainer/ContentItem'
 export default {
   data () {
@@ -31,13 +29,18 @@ export default {
     }
   },
   components: {
-    Header,
+    Banner,
     ContentItem
   }
 }
 </script>
 
-<style>
+<style scoped>
+.header {
+  background-color: #f9f9f9;
+}
+.content {
+}
 .pointer:hover {
   cursor: pointer;
 }

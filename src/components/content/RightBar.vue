@@ -1,5 +1,5 @@
 <template>
-  <div class="text-muted h-100">
+  <div class="h-100">
     <RightTop></RightTop>
     <BlogInfo></BlogInfo>
     <Content v-if="true"></Content>
@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import RightTop from 'components/common/rightbar/RightTop'
-import BlogInfo from 'components/common/rightbar/BlogInfo.vue'
-import Content from 'components/common/rightbar/Content.vue'
+import RightTop from 'components/common/rightbar/righttop/RightTop'
+import BlogInfo from 'components/common/rightbar/bloginfo/BlogInfo'
+import Content from 'components/common/rightbar/content/Content'
 export default {
   components: {
     RightTop,

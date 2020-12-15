@@ -4,7 +4,7 @@
     <div class="head">
       <b>{{name}}
         <small>
-          <svg-icon icon-class="bi-caret-down-fill">
+          <svg-icon :icon-class="iconClass">
           </svg-icon>
         </small>
       </b>
@@ -18,6 +18,11 @@
 <script>
 import { TitleStyle } from '../index'
 export default {
+  data () {
+    return {
+      iconClass: 'bi-caret-down-fill'
+    }
+  },
   props: {
     name: {
       type: String,
