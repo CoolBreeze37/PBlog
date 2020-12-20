@@ -41,7 +41,7 @@ export default {
             icon: 'people-fill'
           },
           {
-            route: '/photos',
+            route: '/album',
             name: '相册',
             icon: 'camera-fill'
           },

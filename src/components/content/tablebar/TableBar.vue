@@ -2,35 +2,29 @@
   <!-- 监听tablebar子组件showEvent事件 -->
   <tab-bar @showEvent="showAside">
     <!-- 顶部导航栏左 brand-->
-    <tab-bar-item slot="left">
-      <svg-icon icon-class="logo"
-                style="width: 130px;height: 34.43px;max-height: 100%;margin-top: 6px;margin-left:20px"></svg-icon>
-    </tab-bar-item>
+
+    <svg-icon slot="left"
+              icon-class="logo"
+              style="width: 130px;height: 34px;"></svg-icon>
+
     <!-- 顶部导航栏左中 搜索框-->
-    <tab-bar-item slot="centerleft">
-      <li class="nav-item">
-        <search-bar></search-bar>
-      </li>
-    </tab-bar-item>
+    <search-bar slot="centerleft"></search-bar>
     <!-- 顶部导航栏右中 音乐播放器-->
-    <tab-bar-item slot="centerright">
-      <li class="nav-item">
-        <player></player>
-      </li>
-    </tab-bar-item>
+
+    <player slot="centerright"></player>
+
     <!-- 顶部导航栏右 菜单-->
-    <tab-bar-item slot="right">
-      <li class="nav-item"
-          style="width:49px">
-        <router-link to="/home"
-                     class="nav-link">
+    <div slot="right">
+      <button class="btn px-0">
+        <a href=""
+           class="nav-link">
           <svg-icon icon-class="feather">
           </svg-icon>
-        </router-link>
-      </li>
+        </a>
+
+      </button>
       <!-- 下拉菜单 -->
-      <li class="nav-item dropdown"
-          style="width:49px">
+      <button class="btn dropdown px-0">
         <a class="nav-link dropdown-toggle"
            role="button"
            data-toggle="dropdown">
@@ -38,7 +32,7 @@
           </svg-icon>
         </a>
         <!-- 下拉菜单右照齐 -->
-        <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-menu dropdown-menu-left">
           <a class="dropdown-item"
              href="#">Action</a>
           <a class="dropdown-item"
@@ -47,22 +41,19 @@
           <a class="dropdown-item"
              href="#">Something else here</a>
         </div>
-      </li>
-    </tab-bar-item>
+      </button>
+    </div>
   </tab-bar>
 </template>
 
 <script>
 import TabBar from "components/common/tabbar/TableBar";
-import TabBarItem from "components/common/tabbar/TableBarItem";
 import SearchBar from "components/common/searchbar/SearchBar";
 import Player from "components/common/player/Player";
-import SvgIcon from '../common/SvgIcon.vue';
 
 export default {
   components: {
     TabBar,
-    TabBarItem,
     SearchBar,
     Player
   },
@@ -76,4 +67,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style></style>

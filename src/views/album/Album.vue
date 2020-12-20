@@ -1,5 +1,9 @@
 <template>
-  <Container />
+  <div>
+    <Container />
+    <router-view></router-view>
+  </div>
+
 </template>
 
 <script>

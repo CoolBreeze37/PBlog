@@ -29,9 +29,9 @@ export class SayStyle extends Style {
   }
 }
 
-// StyleLFooter
-export class FooterStyleL extends Style {
-  constructor(color = "black", backgroundColor = 'white', active = "#efefef") {
+// FooterStyle
+export class FooterStyle extends Style {
+  constructor(color = "#6c757d", backgroundColor = 'white', active = "#efefef") {
     super(color, backgroundColor)
     this.active = active
   }

@@ -1,12 +1,12 @@
 <template>
-  <MainFriendsContainer></MainFriendsContainer>
+  <Container></Container>
 </template>
 
 <script>
-import MainFriendsContainer from './childComponents/FriendsContainer'
+import Container from './childComponents/Container'
 export default {
   components: {
-    MainFriendsContainer
+    Container
   }
 }
 </script>

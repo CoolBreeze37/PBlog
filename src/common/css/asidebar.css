@@ -1,0 +1,21 @@
+#asidebar {
+  background-color: #f9f9f9!important;
+  position: sticky;
+}
+@media screen and (max-width: 576px) {
+  #asidebar  {
+    height: calc(100vh - 50.54px);
+    top: 50.54px;
+  }
+}
+@media screen and (min-width: 576px) {
+  #asidebar  {
+    height: calc(100vh - 56.54px);
+    top: 56.54px;
+  }
+}
+.footer {
+  height: 7vh;
+  display: flex;
+  margin-top: auto;
+}

@@ -26,7 +26,7 @@ $(function () {
   // tooltip延时显示
   $('[data-toggle="tooltip"]').tooltip({ delay: { 'show': 500, 'hidden': 0 } })
 })
-import { FooterStyleL } from '../index'
+import { FooterStyle } from '../index'
 export default {
   data () {
     return {
@@ -40,9 +40,9 @@ export default {
   props: {
     // 期望样式
     curstomerStyle: {
-      type: FooterStyleL,
+      type: FooterStyle,
       default: () => {
-        return new FooterStyleL()
+        return new FooterStyle()
       }
     }
   },

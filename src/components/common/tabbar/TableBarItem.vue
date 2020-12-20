@@ -1,8 +1,8 @@
 <template>
-  <ul class="tab-bar-item navbar-nav"
-      :class="itemClass">
+  <div class=""
+       :class="itemClass">
     <slot></slot>
-  </ul>
+  </div>
 </template>
 
 <script>

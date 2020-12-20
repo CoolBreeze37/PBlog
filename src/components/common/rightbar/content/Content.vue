@@ -58,7 +58,6 @@ export default {
     },
     listenScroll () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(scrollTop)
       this.items.forEach((element, index) => {
         this.activeIndex = element.offsetTop - scrollTop <= 350 ? index : this.activeIndex
         console.log(this.activeIndex)
@@ -107,7 +106,6 @@ export default {
 .active {
   background-color: var(--active);
 }
-
 .item {
   text-align: center;
 }

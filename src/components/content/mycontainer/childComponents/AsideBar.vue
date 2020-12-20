@@ -1,5 +1,5 @@
 <template>
-  <div id="aside-bar"
+  <div id="asidebar"
        class="d-flex flex-column">
     <!-- scroll over-flow:auto-->
     <div class="scroll">
@@ -27,15 +27,5 @@ export default {
 </script>
 
 <style scoped>
-#aside-bar {
-  height: 93vh;
-  top: 7vh;
-  background-color: #f9f9f9;
-  position: sticky;
-}
-.footer {
-  height: 7vh;
-  display: flex;
-  margin-top: auto;
-}
+@import "~common/css/asidebar.css";
 </style>

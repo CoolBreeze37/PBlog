@@ -1,0 +1,43 @@
+@media screen and (min-width: 576px) {
+  #mycontainer {
+    margin-top: 56.54px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #mycontainer {
+    width: 170vw;
+    margin-top: 50.54px;
+  }
+  #mycontainer .mycontainer-size-7 {
+    width: 70vw;
+  }
+  #mycontainer .mycontainer-size-10 {
+    width: 100vw;
+  }
+  /* 隐藏侧边栏 */
+  .asideBarHidden {
+    transform: translate3d(-70vw,0,0);
+    width: 0!important;
+  }
+  /* 显示侧边栏 */
+  .asideBarShow {
+    transform: translate3d(0,0,0);
+    transition: 0.5s linear;
+  }
+}
+/* 加载时样式 */
+.loader {
+  height: 3px;
+  position: absolute;
+  top: -3px;
+  width: 100%;
+  animation: changecolor 2.25s infinite;
+  -webkit-animation: changecolor 2.25s infinite; /*Safari and Chrome*/
+  text-align: center;
+}
+.loaderbar {
+  display: block;
+  height: 3px;
+  animation: keepmove 0.75s infinite;
+  -webkit-animation: keepmove 0.75s infinite;
+}

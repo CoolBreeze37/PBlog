@@ -1,12 +1,12 @@
 <template>
-  <MainRepositoryContainer />
+  <Container />
 </template>
 
 <script>
-import MainRepositoryContainer from './childComponents/RepositoryContainer'
+import Container from './childComponents/Container'
 export default {
   components: {
-    MainRepositoryContainer
+    Container
   }
 }
 </script>
